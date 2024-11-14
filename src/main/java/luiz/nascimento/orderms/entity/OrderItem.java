@@ -6,7 +6,7 @@ public class OrderItem {
 
     private Integer quantity;
 
-    private Integer price;
+    private Long price;
 
     public OrderItem() {
     }
@@ -27,11 +27,11 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public Integer getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 }

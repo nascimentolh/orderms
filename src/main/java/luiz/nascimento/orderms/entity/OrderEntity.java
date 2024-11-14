@@ -1,6 +1,5 @@
 package luiz.nascimento.orderms.entity;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -15,8 +14,8 @@ public class OrderEntity {
 
     @Indexed(name= "customer_id_index")
     private Long customerId;
-    
-    private Integer total;
+
+    private Long total;
 
     private List<OrderItem> items;
 
@@ -39,11 +38,11 @@ public class OrderEntity {
         this.customerId = customerId;
     }
 
-    public Integer getTotal() {
+    public Long getTotal() {
         return total;
     }
 
-    public void setTotal(Integer total) {
+    public void setTotal(Long total) {
         this.total = total;
     }
 
