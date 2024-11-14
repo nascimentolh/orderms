@@ -8,6 +8,12 @@ public class OrderItem {
 
     private Long price;
 
+    public OrderItem(String product, Integer quantity, Long price) {
+        this.product = product;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
     public OrderItem() {
     }
 
