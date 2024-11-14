@@ -10,4 +10,9 @@ public class CastBigDecimalToMicro {
                 .setScale(0, RoundingMode.HALF_UP)
                 .longValue();
     }
+
+    public static BigDecimal cast(Long micros) {
+        return BigDecimal.valueOf(micros)
+                .divide(BigDecimal.valueOf(1_000_000), 6, RoundingMode.HALF_UP);
+    }
 }
